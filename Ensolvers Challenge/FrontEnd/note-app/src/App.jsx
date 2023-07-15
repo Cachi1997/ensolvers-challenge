@@ -2,11 +2,17 @@ import { useState } from "react"
 import CreateNote from "./components/CreateNote"
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [notes, setNotes] = useState([])
 
+  function addNote(newNote){
+    setNotes(prevNotes => {
+      return [...prevNotes, newNote]
+    })
+  }
+  
   return (
     <div>
-      <CreateNote />
+      <CreateNote onAdd={addNote}/>
     </div>
   )
 }
