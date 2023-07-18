@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 
+
 function CreateNote(props) {
 
   const [note, setNote] = useState({
@@ -30,16 +31,16 @@ function CreateNote(props) {
       content: ""
     })
   }
-  
+
   return (
     <div className="container">
-      <form className="note-form" onChange={handleChange}>
-        <h1>Create/Edit Note</h1>
-        <div className="note-box">
+      <form className="create-form" onChange={handleChange}>
+        <h2>Create/Edit Note</h2>
+        <div className="create-box">
           <label htmlFor="nombre">Title</label>
           <input type="text" name="title" placeholder="title.." value={note.title} id="nombre"/>
         </div>
-        <div className="note-box">
+        <div className="create-box">
           <label htmlFor="content">Content</label>
           <textarea placeholder="content..." name="content" value={note.content} id="content"></textarea>
         </div>
