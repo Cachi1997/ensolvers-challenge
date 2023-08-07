@@ -1,0 +1,36 @@
+.create-box{
+	display: flex;
+	margin: 8px 0px;
+}
+
+.create-box label {
+	flex-basis: 80px;
+}
+
+.create-box input {
+	flex: 1;
+	margin-bottom: 10px;
+	height: 20px;
+}
+
+#content {
+	flex: 1;
+	height: 100px;
+}
+
+.button-box {
+	display: flex;
+	justify-content: flex-end;
+	gap: 20px;
+	margin-top: 10px;
+}
+
+.save-button {
+	border-radius: 10%;
+	cursor: pointer;
+}
+
+.cancel-button {
+	cursor: pointer;
+	border-radius: 10%;
+}
